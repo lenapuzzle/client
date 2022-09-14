@@ -20,6 +20,11 @@ const ProductShow = (props) => {
                 <p>Price: {product.price}</p>
                 <p>Description: {product.description}</p>
             </div>
+            <Link to={"/products/" + product._id + "/edit"}>
+                Edit This Product
+            </Link>
+            <br/>
+            <br/>
             <Link to="/products">
                 <button>Go Back to Products</button>
             </Link>
