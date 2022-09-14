@@ -10,7 +10,7 @@ const ProductShow = (props) => {
         axios.get('http://localhost:8000/api/products/' + id)
             .then(res => setProduct(res.data))
             .catch(err => console.log(err));
-    }, []);
+    }, [id]);
     console.log(product.title);
     return (
         <div>
