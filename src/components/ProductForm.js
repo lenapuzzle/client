@@ -20,6 +20,7 @@ export default props => {
 
     return(
         <form onSubmit={onSubmitHandler}>
+            <h3>Product Manager</h3>
             <p>
                 <label>Title</label>
                 <input type="text" onChange={e => setTitle(e.target.value)}/>
@@ -32,7 +33,7 @@ export default props => {
                 <label>Description</label>
                 <input type="text" onChange={e => setDescription(e.target.value)}/>
             </p>
-            <input type="submit"/>
+            <input type="submit" value="Create"/>
         </form>
     )
 }
