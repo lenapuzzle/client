@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from "react-router-dom";
+import { Link } from 'react-router-dom';
     
 const ProductShow = (props) => {
     const [product, setProduct] = useState({})
@@ -14,9 +15,14 @@ const ProductShow = (props) => {
     console.log(product);
     return (
         <div>
-            <h3>{product.title}</h3>
-            <p>Price: {product.price}</p>
-            <p>Description: {product.description}</p>
+            <div>
+                <h3>{product.title}</h3>
+                <p>Price: {product.price}</p>
+                <p>Description: {product.description}</p>
+            </div>
+            <Link to="/products">
+                <button>Go Back to Products</button>
+            </Link>
         </div>
     )
 }
