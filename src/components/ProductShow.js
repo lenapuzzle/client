@@ -11,7 +11,7 @@ const ProductShow = (props) => {
             .then(res => setProduct(res.data))
             .catch(err => console.log(err));
     }, [id]);
-    console.log(product.title);
+    console.log(product);
     return (
         <div>
             <h3>{product.title}</h3>
