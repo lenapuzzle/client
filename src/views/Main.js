@@ -4,7 +4,6 @@ import axios from 'axios';
 import ProductForm from '../components/ProductForm';
 import ProductList from '../components/ProductList';
 
-// eslint-disable-next-line import/no-anonymous-default-export
 const Main = (props) => {
     const [products, setProducts] = useState([]);
     const [loaded, setLoaded] = useState(false);
@@ -31,6 +30,7 @@ const Main = (props) => {
         </div>
     )
 }
+
 
 export default Main;
 

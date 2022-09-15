@@ -17,7 +17,7 @@ const ProductShow = (props) => {
         <div>
             <div>
                 <h3>{product.title}</h3>
-                <p>Price: {product.price}</p>
+                <p>Price: ${product.price}</p>
                 <p>Description: {product.description}</p>
             </div>
             <Link to={"/products/" + product._id + "/edit"}>
